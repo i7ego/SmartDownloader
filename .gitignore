@@ -26,3 +26,7 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 .DS_Store
+
+# Local helper scripts
+push_to_github.bat
+push_to_github.ps1
