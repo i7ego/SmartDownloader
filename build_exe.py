@@ -49,7 +49,7 @@ def build():
         "--clean",
         "--name=SmartDownloader",
         "--windowed",  # بدون شاشة سوداء CMD
-        f"--add-data={ASSETS_DIR}{path_sep}assets",
+        f"--add-data=assets{path_sep}assets",
         "--collect-all=customtkinter",
         "--collect-all=yt_dlp",
         "--hidden-import=pystray",
@@ -58,8 +58,11 @@ def build():
 
     if sys.platform == "win32":
         cmd.extend([
-            f"--icon={ICON_PATH}",
+            f"--icon=assets{os.sep}app_icon.ico",
             "--hidden-import=windnd",
+            "--hidden-import=win32api",
+            "--hidden-import=win32gui",
+            "--hidden-import=win32con",
         ])
     elif sys.platform == "darwin":
         cmd.extend([
