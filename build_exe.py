@@ -60,9 +60,6 @@ def build():
         cmd.extend([
             f"--icon=assets{os.sep}app_icon.ico",
             "--hidden-import=windnd",
-            "--hidden-import=win32api",
-            "--hidden-import=win32gui",
-            "--hidden-import=win32con",
         ])
     elif sys.platform == "darwin":
         cmd.extend([
