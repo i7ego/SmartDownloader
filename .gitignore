@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+*.spec
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local data / user downloads
+data/
+downloads/
+*.log
+
+# OS generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
